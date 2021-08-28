@@ -2896,7 +2896,7 @@ def generate_names(number_names):
 
 
 if __name__ == '__main__':
-	(_, _, filenames) = next(os.walk('folder'), (None, None, []))
+	(_, _, filenames) = next(os.walk('.'), (None, None, []))
 	new_names = generate_names(len(filenames))
 
 	for old_name, new_name in zip(filenames, new_names):
